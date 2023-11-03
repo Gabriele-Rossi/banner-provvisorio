@@ -24,6 +24,17 @@ function startCountdown(targetDate, offsetMinutes) {
     setInterval(updateCountdown, 1000);
 }
 
+// Funzione per aggiornare il mese e il giorno correnti
+function updateMonth() {
+    const demo2Element = document.getElementById('demo2');
+    const currentDate = new Date();
+    const monthNames = ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"];
+    const currentMonth = monthNames[currentDate.getMonth()];
+    const dayOfMonth = currentDate.getDate();
+    
+    demo2Element.textContent = `${dayOfMonth} ${currentMonth}`;
+}
+
 // Imposta la data di scadenza del countdown a una data e un orario specifici
 const targetDate = new Date("Nov 12, 2023 12:18:03 GMT+01:00").getTime();
 
@@ -37,4 +48,5 @@ targetDateWithOffset.setMinutes(targetDateWithOffset.getMinutes() + offsetMinute
 // Avvia il countdown con la nuova data di scadenza e l'offset orario specifici
 document.addEventListener('DOMContentLoaded', () => {
     startCountdown(targetDateWithOffset, offsetMinutes);
+    updateMonth();
 });
