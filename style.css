@@ -19,19 +19,22 @@
   background-color: black;
   margin: 0px;
   flex: column;
+ gap: 0px;
+  justify-content: space-around;
+  align-items: center;
 }
 .month{
   margin: 0%;
   display: flex;
-  padding: 15% 0% 0% 0%;
-  font-size: 100%;
+  padding: 10% 0% 0% 0%;
+  font-size: 300%;
 }
 .date{
   padding-top: 0%;
   height: min-content;
   text-align: start;
-  padding: 0% 0% 15% 0% ;
-  font-size: 400%;
+  padding: 0% 0% 10% 0%;
+  font-size: 750%;
   font-weight: 700;
   display: flex;
   margin: 0%;
@@ -48,6 +51,45 @@ img {
   color: red;
 }
 
+@media screen and (max-width: 1440px) {
+  .date{
+     padding: 0% 0% 12% 0%;
+     font-size: 550%;
+  }
+  
+  .month{
+    padding: 12% 0% 0% 0%;
+    font-size: 200%;
+    /* letter-spacing: 2px; */
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .date{
+     padding: 0% 0% 10% 0%;
+     font-size: 400%;
+  }
+  
+  .month{
+    padding: 10% 0% 0% 0%;
+    font-size: 150%;
+    /* letter-spacing: 2px; */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .date{
+     padding: 0% 0% 10% 0%;
+     font-size: 300%;
+  }
+  
+  .month{
+    padding: 10% 0% 0% 0%;
+    font-size: 150%;
+    /* letter-spacing: 2px; */
+  }
+}
+
 @media screen and (max-width: 425px) {
   .date{
      padding: 0% 0% 10% 0%;
@@ -57,6 +99,32 @@ img {
   .month{
     padding: 10% 0% 0% 0%;
     font-size: 100%;
+    /* letter-spacing: 2px; */
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .date{
+     padding: 0% 0% 10% 0%;
+     font-size: 125%;
+  }
+  
+  .month{
+    padding: 10% 0% 0% 0%;
+    font-size: 80%;
+    /* letter-spacing: 2px; */
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .date{
+     padding: 0% 0% 10% 0%;
+     font-size: 110%;
+  }
+  
+  .month{
+    padding: 10% 0% 0% 0%;
+    font-size: 80%;
     /* letter-spacing: 2px; */
   }
 }

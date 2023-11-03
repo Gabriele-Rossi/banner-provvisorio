@@ -28,7 +28,7 @@ function startCountdown(targetDate, offsetMinutes) {
 function updateMonth() {
     const demo2Element = document.getElementById('demo2');
     const currentDate = new Date();
-    const monthNames = ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"];
+    const monthNames = ["Gen", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Ott", "Nov", "Dic"];
     const currentMonth = monthNames[currentDate.getMonth()];
     const dayOfMonth = currentDate.getDate();
     
